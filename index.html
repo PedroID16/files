@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LPtreinos | Biblioteca de treinos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#" aria-label="LPtreinos">
+        <span class="brand__logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6.5 6.5l11 11M3.5 9.5l6-6 2 2-6 6zM12.5 18.5l6-6 2 2-6 6z"/>
+          </svg>
+        </span>
+        <span class="brand__name">LPtreinos</span>
+        <span class="brand__divider"></span>
+        <span class="brand__tag">Os melhores Treinos</span>
+      </a>
+      <svg class="topbar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+        <rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 4v16M4 10h5M4 15h5"/>
+      </svg>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <div>
+        <p class="eyebrow">Biblioteca de treinos</p>
+        <h1>Foco no próximo movimento.</h1>
+        <p class="intro__sub">Escolha um grupo muscular para ver os exercícios e as orientações do treino.</p>
+      </div>
+      <span class="pill" id="groupCount">6 grupos musculares</span>
+    </section>
+
+    <section class="accordion" id="accordion" aria-label="Grupos musculares"></section>
+
+    <footer class="footnote">
+      <span>Consistência antes de intensidade.</span>
+      <span class="footnote__safe">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.500-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/>
+        </svg>
+        Respeite seus limites e a orientação profissional.
+      </span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
