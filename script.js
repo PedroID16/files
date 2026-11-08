@@ -18,13 +18,23 @@ const groups = [
         sets: "3", reps: "10–12", rest: "90 s"
       },
       {
-        name: "Crucifixo com Halteres – Metade Inferior do Movimento ",
+        name: "Crucifixo inclinado com Halteres",
         tip: "Deitado no banco, abra os braços lateralmente com os cotovelos levemente flexionados. Realize apenas a metade inferior do movimento, concentrando-se no alongamento do peitoral.",
         sets: "3", reps: "12–15", rest: "60 s"
       },
       {
         name: "Supino Inclinado com Halteres",
         tip: "Deitado em um banco inclinado, segure os halteres na altura do peito e empurre-os para cima até quase estender os braços. Trabalha principalmente a porção superior do peitoral.",
+        sets: "3", reps: "12–15", rest: "60 s"
+      }, 
+      {
+        name: "Supino 45 no smith",
+        tip: "Deitado no banco inclinado a 45°, segure a barra com as mãos afastadas na largura dos ombros. Desça a barra em direção à parte superior do peito e empurre-a para cima até quase estender os braços.",
+        sets: "3", reps: "12–15", rest: "60 s"
+      },
+       {
+        name: "Cross over ",
+        tip: "De frente para a polia alta, segure os puxadores com as mãos e leve-os à frente do corpo, cruzando-os levemente. Retorne controladamente à posição inicial.",
         sets: "3", reps: "12–15", rest: "60 s"
       }
     ]
@@ -250,8 +260,7 @@ function renderItem(g, open) {
   </article>`;
 }
 
-accordion.innerHTML = groups.map((g, i) => renderItem(g, i === 0)).join("");
-
+accordion.innerHTML = groups.map((g) => renderItem(g, false)).join("");
 // One group open at a time; clicking the open one closes it.
 accordion.addEventListener("click", (event) => {
   const head = event.target.closest(".item__head");
